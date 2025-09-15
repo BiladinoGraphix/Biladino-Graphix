@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Language" content="en" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biladino Graphix</title>
+  <style>
+    :root{
+      --bg:#333333;       /* dark gray background */
+      --card:#1f1f1f;     /* darker gray cards */
+      --muted:#cccccc;    /* muted light gray */
+      --accent:#ff6600;   /* orange accent */
+      --white:#ffffff;    /* white text */
+      --black:#000000;    /* black for strong contrast */
+    }
+    body{margin:0;font-family:sans-serif;background:var(--bg);color:var(--white);}
+    header{display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;background:var(--card);position:sticky;top:0;z-index:10;}
+    .logo img{width:10%;height:auto;object-fit:contain;border-radius:10px;}
+    nav a{color:var(--white);margin:0 1rem;text-decoration:none;font-weight:bold;}
+    nav a:hover{color:var(--accent);}
+    section{padding:4rem 2rem;max-width:1000px;margin:auto;}
+    h1,h2,h3{color:var(--white);}
+    p{color:var(--muted);}
+    .btn{background:var(--accent);color:var(--black);padding:0.75rem 1.5rem;border:none;border-radius:0.5rem;cursor:pointer;font-weight:bold;text-decoration:none;display:inline-block;}
+    .btn:hover{opacity:0.85;}
+    .card{background:var(--card);padding:2rem;border-radius:1rem;box-shadow:0 4px 8px rgba(0,0,0,0.5);margin-bottom:2rem;}
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;}
+    .portfolio{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;}
+    .portfolio img{width:100%;border-radius:0.5rem;}
+    footer{background:var(--card);text-align:center;padding:2rem;color:var(--muted);margin-top:2rem;}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="Biladino_logo.png" alt="Biladino Graphix Logo">
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="hero" style="text-align:center;">
+    <h1>Welcome to Biladino Graphix</h1>
+    <p>Your vision, our creativity. Professional designs for brands that stand out.</p>
+    <a href="#contact" class="btn">Get in Touch</a>
+  </section>
+
+  <section id="about">
+    <div class="card">
+      <h2>About Us</h2>
+      <p>At Biladino Graphix, we bring ideas to life through creative and professional designs. From logos, business cards, flyers, posters, and ID cards to complete branding solutions, we help businesses and individuals stand out with a strong visual identity.
+
+Our mission is simple: to create designs that are modern, unique, and memorable while keeping your brand’s message at the heart of everything we do.
+
+Choose Biladino Graphix for creativity, quality, and professionalism that leaves a lasting impression.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Logo Design</h3>
+        <p>Unique and memorable logos that define your brand.</p>
+        <img src="Declan_Production.jpg" alt="Logo Design Sample" style="width:100%; border-radius:10px; margin-top:10px;">
+      </div>
+      <div class="card">
+        <h3>Business Cards</h3>
+        <p>Professional and creative cards to make lasting impressions.</p>
+        <img src="MKL_Business_card.jpg" alt="Business Card Sample" style="width:100%; border-radius:10px; margin-top:10px;">
+      </div>
+      <div class="card">
+        <h3>Flyers & Posters</h3>
+        <p>Eye-catching promotional materials that engage audiences.</p>
+        <img src="Flyer_Mock_1.jpg" alt="Flyer Sample" style="width:100%; border-radius:10px; margin-top:10px;">
+      </div>
+      <div class="card">
+        <h3>ID Card Design</h3>
+        <p>Custom ID cards for organizations and events.</p>
+        <img src="MKL_Thank_you_card.jpg" alt="ID Card Sample" style="width:100%; border-radius:10px; margin-top:10px;">
+
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+      <img src="Tinukeh_Closet.jpg" alt="Tinukeh_Closet">
+      <img src="Flyer_Mockup_2.jpg" alt="Flyer_Mockup 2">
+      <img src="Id_card.jpg" alt="Id_card.">
+      <img src="Flyer_Mockup_4.jpg" alt="Flyer_Mockup_4">
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="card" style="text-align:center;">
+      <h2>Contact Us</h2>
+      <p>Email: biladinographix@gmail.com</p>
+      <p>Phone: +234 915 309 8721</p>
+      <a href="mailto:biladinographix@gmail.com" class="btn">Send Email</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Biladino Graphix. All rights reserved.</p>
+  </footer>
+</body>
+</html>
